@@ -5,8 +5,8 @@ const contentInput = document.getElementById("blog-content");
 
 // Test
 let storedNotes = [{
-  title: "This is how you",
-  content: "Move with the flow of time!!"
+  title: "Gym",
+  content: "Check out the gym opening next week!"
 }];
 
 for (let note of storedNotes) {
@@ -15,20 +15,6 @@ for (let note of storedNotes) {
   postsArea.prepend(noteItem);
   bindEvents(noteItem)
 }
-
-// Example 1
-let visitTimes = {
-  times: 0
-};
-if (JSON.parse(localStorage.getItem("key")).times) {
-  visitTimes = JSON.parse(localStorage.getItem("key"));
-};
-visitTimes.times++;
-const numberHolder = document.getElementById("number");
-numberHolder.innerHTML = visitTimes.times;
-localStorage.setItem("key", JSON.stringify(visitTimes));
-const reset = document.getElementById("reset");
-reset.onclick = resetCounter;
 
 function resetCounter() {
   let a = JSON.parse(localStorage.getItem("key"));
