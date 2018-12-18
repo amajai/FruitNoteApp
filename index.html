@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>FruitNote</title>
+</head>
+
+<body>
+  <div class="my-2 input-group-append">
+    <h2>Page visited: <span id="number"></span></h2>
+    <button id="reset" class="btn btn-danger ml-2">Reset</button>
+  </div>
+  <div id="home" class="jumbotron jumbotron-fluid bg-danger">
+    <div class="container text-center text-white">
+      <h1 class="display-3">FruitNote</h1>
+      <p class="lead">An app that saves and keeps your notes</p>
+    </div>
+
+    <div class="container col-5 pb-2">
+      <div class="form-group">
+        <label for="blogTitle">Post Title</label>
+        <input id="blog-title" type="text" class="form-control" id="blogTitle" placeholder="Title">
+      </div>
+
+      <label>Content</label>
+      <div class="input-group">
+        <textarea id="blog-content" class="form-control" rows="2" placeholder="What's on your mind..." id="note"></textarea>
+        <div class="input-group-append">
+          <button onclick="addNote()" class="btn btn-primary" type="button">Add</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="posts" class="container-fluid">
+    <!-- Card -->
+    <!-- <div class="card col-12 my-3 pb-3">
+      <div class="card-body mb-3">
+        <div class="container-fluid d-flex justify-content-end">
+          <button class="btn badge btn-danger rounded-circle btnDel" title="Delete">X</button>
+        </div>
+        <h4 class="card-title">Go to Gym</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Tue Oct 02 2018 21:45:42 GMT+0100 (West Africa Standard Time)</h6>
+        <p class="card-text">
+          Do intense workout at the new gym opening.
+        </p>
+      </div>
+    </div> -->
+
+  </div>
+
+
+  <!-- <div class="container bg-success pb-2">
+    <div class="form-group">
+      <label for="blogTitle">Post Title</label>
+      <input id="blog-title" type="text" class="form-control" id="blogTitle" placeholder="Title">
+    </div>
+
+    <label>Content</label>
+    <div class="input-group">
+      <textarea id="blog-content" class="form-control" rows="2" placeholder="What's on your mind..." id="note"></textarea>
+      <div class="input-group-append">
+        <button onclick="mybtn()" class="btn btn-primary" type="button">Post it</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid bg-danger text-center text-white mt-5 mb-0 py-5  ">
+    <h2>© 2018 Abdulmajeed,inc. All rights reserved.</h2>
+  </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/main4.js"></script>
+  <script src="assets/js/jquery-3.3.1.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/popper.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
